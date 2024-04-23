@@ -5,12 +5,7 @@
 /**
  * add event on element
  */
-  document.addEventListener('DOMContentLoaded', function () {
-            setTimeout(function () {
-                document.getElementById('N1').innerHTML =
-                    'The page has finished loading! After 5 second';
-            }, 5000); // Delay of 5 seconds
-        });
+ 
 
 const addEventOnElem = function (elem, type, callback) {
   if (elem.length > 1) {
