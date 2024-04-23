@@ -132,7 +132,6 @@
         <div class="container">
 <div class="trend-tab"> 
   <h1 class="h1 hero-title">INVEST SMARTER GROW STRONGER YOUR PATH TO FINANCIAL SUCCESS STARTS HERE</h1>
-  
 
             <!-- <ul class="tab-nav">
 
@@ -271,16 +270,11 @@
             </ul> -->
 
           </div> 
-                 
-
-        </div> 
-      </section>
-        <!-- TradingView Widget BEGIN -->
-          
-<div class="tradingview-widget-container">
-   <div class="tradingview-widget-container__widget"></div> 
-   <div class="tradingview-widget-copyright"><a href="" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div> 
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                   <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" id="N1">
+  <div class="tradingview-widget-container__widget"></div>
+  <!-- <div class="tradingview-widget-copyright"><a href="" rel="noopener nofollow" target="_blank"><span class="blue-text">Welcome To CWTD</span></a></div> -->
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
   {
   "symbols": [
     {
@@ -311,34 +305,45 @@
   "locale": "en"
 }
   </script>
-
 </div>
-      <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
+
+        </div>
+      </section>
+
+      <!-- 
+        - #MARKET
+      -->
+     
+      <section class="section market" aria-label="market update" id="Market" data-section>
+
+        <div class="container">
+          
+          <h2 class="h2 section-title">Market Update</h2>
+
+
+   <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" id="N1">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <div class="tradingview-widget-copyright"><a href="" rel="noopener nofollow" target="_blank"><span class="blue-text">Oil & Gold</span></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
   {
-  "width": 550,
-  "height": 490,
+  "width": "100%",
+  "height":"500",
   "defaultColumn": "overview",
   "screener_type": "crypto_mkt",
   "displayCurrency": "USD",
   "colorTheme": "dark",
-  "locale": "en",
-  "isTransparent": true
+  "locale": "en"
 }
   </script>
-  
 </div>
-<!--<TradingView Widget END -->
-      <!-- TradingView Widget BEGIN -->
-  <<div class="tradingview-widget-container" class="oail">
+<!-- TradingView Widget END -->
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" id="N1">
   <div class="tradingview-widget-container__widget"></div>
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
-   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
-
-
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
   {
   "title": "Commodities",
   "width": "100%",
@@ -525,22 +530,7 @@
 }
   </script>
 </div>
-
-      <!-- 
-        - #MARKET
-      -->
-     
-      <section class="section market" aria-label="market update" id="Market" data-section>
-
-        <div class="container">
-          
-          <h2 class="h2 section-title">Market Update</h2>
-
-
-
-
-
-<!-- TradingView Widget END 
+<!-- TradingView Widget END -->
 
 
             <!-- <div class="title-wrapper"> -->
@@ -1358,16 +1348,14 @@
   <!-- 
     - custom js link
   -->
-
-<script>
-        window.onload = function () {
-            setTimeout(function () {
-                document.getElementById('message').innerHTML =
-                    'The page has finished loading! After 5 second';
-            }, 5000); // Delay of 5 seconds
-        };
-    </script>
-                      
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function () {
+            document.getElementById('N1').innerHTML =
+                'The page has finished loading! After 5 second';
+        }, 5000); // Delay of 5 seconds
+    });
+</script>
     <script src="./assets/js/script.js" defer></script>
 
   <!-- 
@@ -1375,8 +1363,7 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-                     
-                         
+
 </body>
 
 </html>
