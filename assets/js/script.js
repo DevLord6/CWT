@@ -16,12 +16,6 @@ const addEventOnElem = function (elem, type, callback) {
   }
 }
 
- document.addEventListener('DOMContentLoaded', function () {
-            setTimeout(function () {
-                document.getElementById('message').innerHTML =
-                    'The page has finished loading! After 5 second';
-            }, 5000); // Delay of 5 seconds
-        });
 
 /**
  * navbar toggle
