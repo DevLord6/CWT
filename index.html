@@ -1358,6 +1358,16 @@
   <!-- 
     - custom js link
   -->
+
+  <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+                document.getElementById('message').innerHTML =
+                    'The page has finished loading! After 5 second';
+            }, 5000); // Delay of 5 seconds
+        });
+    </script>
+                      
     <script src="./assets/js/script.js" defer></script>
 
   <!-- 
