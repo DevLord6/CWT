@@ -297,7 +297,7 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -305,6 +305,7 @@ body.active { overflow: hidden; }
   padding-block: 15px;
   z-index: 4;
 }
+
 
 .header.active {
   position: fixed;
@@ -403,7 +404,7 @@ body.active { overflow: hidden; }
   #HERO
 \*-----------------------------------*/
 
-.hero { padding-block: 150px 140px; }
+.hero { padding-block: 70% 140px; }
 
 .hero-content { margin-block-end: 80px; }
 
