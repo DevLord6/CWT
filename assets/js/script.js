@@ -5,26 +5,21 @@
 /**
  * add event on element
  */
- 
+
+
+
 
 const addEventOnElem = function (elem, type, callback) {
-  // Check if elem is an array-like object
-  if (elem && elem.length !== undefined) {
-    for (let i = 0; i < elem.length; i++) {
-      // Ensure each element in the array has addEventListener method
-      if (elem[i] && typeof elem[i].addEventListener === 'function') {
-        elem[i].addEventListener(type, callback);
-      } else {
-        console.error('Element at index ' + i + ' is invalid or does not support addEventListener');
-      }
-    }
-  } else if (elem && typeof elem.addEventListener === 'function') {
-    // If elem is a single element
+  if (elem && typeof elem.addEventListener === 'function') {
+    // Check if elem has addEventListener method
     elem.addEventListener(type, callback);
   } else {
     console.error('Invalid element or element does not support addEventListener');
   }
 }
+
+
+
 
 
 /**
@@ -67,7 +62,8 @@ const activeHeader = function () {
   }
 }
 
-addEventOnElem(window, "scroll", activeHeader);
+window.addEventListener("scroll", activeHeader);
+
 
 
 
@@ -104,6 +100,10 @@ const scrollReveal = function () {
 scrollReveal();
 
 addEventOnElem(window, "scroll", scrollReveal);
+
+
+
+
 
 
 
