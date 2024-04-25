@@ -335,6 +335,7 @@ body.active { overflow: hidden; }
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  height: 65px;
 }
 
 .logo {
@@ -404,7 +405,7 @@ body.active { overflow: hidden; }
   #HERO
 \*-----------------------------------*/
 
-.hero { padding-block: 288px 140px; }
+.hero { padding-block: 197px 140px; }
 
 .hero-content { margin-block-end: 80px; }
 
