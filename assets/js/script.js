@@ -6,17 +6,28 @@
  * add event on element
  */
 
-
-
-
 const addEventOnElem = function (elem, type, callback) {
-  if (elem && typeof elem.addEventListener === 'function') {
-    // Check if elem has addEventListener method
-    elem.addEventListener(type, callback);
+  if (elem instanceof NodeList || elem instanceof HTMLCollection || Array.isArray(elem)) {
+    // Case: elem is an array-like collection
+    for (let i = 0; i < elem.length; i++) {
+      elem[i].addEventListener(type, callback);
+    }
   } else {
-    console.error('Invalid element or element does not support addEventListener');
+    // Case: elem is a single element
+    elem.addEventListener(type, callback);
   }
 }
+
+
+
+// const addEventOnElem = function (elem, type, callback) {
+//   if (elem && typeof elem.addEventListener === 'function') {
+//     // Check if elem has addEventListener method
+//     elem.addEventListener(type, callback);
+//   } else {
+//     console.error('Invalid element or element does not support addEventListener');
+//   }
+// }
 
 
 
